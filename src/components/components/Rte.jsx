@@ -1,6 +1,7 @@
 import React from "react";
 import { Editor } from "@tinymce/tinymce-react";
 import { Controller } from "react-hook-form";
+import envConfig from "../../envConfig/index";
 
 function Rte({ name, control, label, defaultValue = "" }) {
   return (
@@ -17,7 +18,7 @@ function Rte({ name, control, label, defaultValue = "" }) {
         render={({ field: { onChange } }) => (
           <Editor
             initialValue={defaultValue}
-            apiKey="jt4vmtd55ve0rnl5ucxu6dw58yo2qkoy76mgp86sxnd5xxmm"
+            apiKey={envConfig.rteApiKey}
             init={{
               initialValue: defaultValue,
               height: 500,

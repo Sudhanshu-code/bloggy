@@ -5,6 +5,8 @@ const envConfig = {
   storageBucket: String(import.meta.env.VITE_storageBucket),
   messagingSenderId: String(import.meta.env.VITE_messagingSenderId),
   appId: String(import.meta.env.VITE_appId),
+
+  rteApiKey: String(import.meta.env.VITE_tiny_apikey),
 };
 
 export default envConfig;
