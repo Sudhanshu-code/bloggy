@@ -22,9 +22,13 @@ function PostCard({ id, slug, title, content, imageUrl }) {
     <Link to={`/post/${id}`}>
       <div className="w-full bg-gray-100 rounded-xl p-4">
         <div className="w-full justify-center mb-4">
-          <img src={imageUrl} alt={title} className="rounded-xl" />
+          <img
+            src={imageUrl}
+            alt={title}
+            className="w-full h-56 object-cover rounded-xl"
+          />
         </div>
-        <h2 className="text-xl font-bold">{title}</h2>
+        <h2 className="text-xl font-bold truncate ">{title}</h2>
       </div>
     </Link>
   );
