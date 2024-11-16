@@ -44,9 +44,9 @@ function Home() {
     return (
       <div className="w-full py-8">
         <Container>
-          <div className="flex flex-wrap">
+          <div className="grid gap-2 md:grid-cols-3 grid-cols-2">
             {posts.map((post) => (
-              <div key={post.imageUrl} className="p-2 w-1/4">
+              <div key={post.imageUrl} className="">
                 <PostCard {...post} />
               </div>
             ))}

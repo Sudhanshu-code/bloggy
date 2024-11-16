@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 function AllPosts() {
   const [posts, setPosts] = useState([]);
   const userStatus = useSelector((state) => state.user.isUserLoggedIn);
-  console.log("user status: ", userStatus);
 
   // useEffect(() => {}, []);
   if (userStatus) {
@@ -20,9 +19,9 @@ function AllPosts() {
   return (
     <div className="w-full py-8">
       <Container>
-        <div className="flex flex-wrap">
+        <div className="grid gap-4 md:grid-cols-3 grid-cols-2">
           {posts.map((post) => (
-            <div key={post.id} className="p-2 w-1/4">
+            <div key={post.id}>
               <PostCard {...post} />
             </div>
           ))}

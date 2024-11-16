@@ -13,7 +13,7 @@ function Button({
   return (
     <button
       type={type}
-      className={` px-4 py-2 m-3 rounded-lg w-full ${bgColor} ${textColor} ${className}`}
+      className={` p-2 m-2 rounded-lg lg:w-full w-16 ${bgColor} ${textColor} ${className}`}
       {...prop}
     >
       {id ? (

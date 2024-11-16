@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-import "./App.css";
 // import Signup from "./components/Signup";
 // import Post from "./components/Post";
 import Header from "./components/header/Header";
@@ -44,7 +43,7 @@ function App() {
 
   return !loading ? (
     <div className="min-h-screen flex flex-wrap content-between bg-slate-100 dark:bg-[#121212]">
-      <div className="w-full block">
+      <div className="w-full block transition-all duration-300 ">
         <Header />
         <main>
           <Outlet />

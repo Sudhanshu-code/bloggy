@@ -46,12 +46,20 @@ function Post() {
       <div className="py-8">
         <Container>
           <div className="w-full flex justify-center mb-4 relative border-2 border-black dark:border-white  rounded-xl p-2">
-            <img src={post.imageUrl} alt={post.title} className="rounded-xl" />
+            <img
+              src={post.imageUrl}
+              alt={post.title}
+              className="rounded-xl object-contain h-80"
+            />
 
             {isAuthor && (
-              <div className="absolute right-6 top-6">
+              <div className="absolute right-4 top-6">
                 <Link to={`/edit-post/${slug}`}>
-                  <Button bgColor="bg-green-500" text="Edit" className="mr-3" />
+                  <Button
+                    bgColor="bg-green-500"
+                    text="Edit"
+                    className="mr-3 "
+                  />
                 </Link>
                 <Button
                   bgColor="bg-red-500"
