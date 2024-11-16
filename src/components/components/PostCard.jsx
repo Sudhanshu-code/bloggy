@@ -25,7 +25,7 @@ function PostCard({ id, slug, title, content, imageUrl }) {
           <img
             src={imageUrl}
             alt={title}
-            className="w-full h-56 object-contain rounded-xl"
+            className="w-full h-56 object-cover rounded-xl"
           />
         </div>
         <h2 className="text-xl font-bold truncate ">{title}</h2>
